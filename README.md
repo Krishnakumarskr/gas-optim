@@ -8,7 +8,7 @@ Optimizatio details
 
 <hr>
 
-#### Tool used: Foundry
+### Tool used: Foundry
 
 Gas used in old contract
 | src/OldDistribute.sol:DistributeOld contract |                 |        |        |        |         |
@@ -27,3 +27,23 @@ Gas used in optimized contract
 | distribute                             | 206746          | 206746 | 206746 | 206746 | 1       |
 
 Total gas saved: 14,785
+
+
+
+Gas saved on replace require with error. Testing failure case.
+| src/OldDistribute.sol:DistributeOld contract |  |  |  |  |  |
+| --- | --- | --- | --- | --- | --- |
+| Deployment Cost | Deployment Size |  |  |  |  |
+| 317832 | 1355 |  |  |  |  |
+| Function Name | min | avg | median | max | # calls |
+| distribute | 2458 | 2458 | 2458 | 2458 | 1 |
+
+
+| src/Distribute.sol:Distribute contract |  |  |  |  |  |
+| --- | --- | --- | --- | --- | --- |
+| Deployment Cost | Deployment Size |  |  |  |  |
+| 320780 | 1494 |  |  |  |  |
+| Function Name | min | avg | median | max | # calls |
+| distribute | 301 | 301 | 301 | 301 | 1 |
+
+Total gas saved on revert test case: 2,157
