@@ -1,5 +1,5 @@
 # gas-optim
-Optimizatio details
+Optimization details
 
 1. Remove array and make all the contributors address as immutable address.
 2. Make the create time immutable
