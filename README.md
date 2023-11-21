@@ -30,7 +30,7 @@ Total gas saved: 14,785
 
 
 
-Gas saved on replace require with error. Testing failure case.
+Gas saved on replacing *require* with revert error. Testing revert case.
 | src/OldDistribute.sol:DistributeOld contract |  |  |  |  |  |
 | --- | --- | --- | --- | --- | --- |
 | Deployment Cost | Deployment Size |  |  |  |  |
